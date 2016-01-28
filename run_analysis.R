@@ -34,11 +34,11 @@ run_analysis <- function(dataDir){
         
         COMPLETE        <- select_(COMPLETE,.dots = filteredFeatures)
         
-        # STEP 3: Naming ACTIVITY variable values       
+        # STEP 3: Labeling ACTIVITY variable values       
         
         COMPLETE$ACTIVITY <- factor(COMPLETE$ACTIVITY, levels = 1:6, labels = activity_labels$V2)
         
-        # STEP 4: Re-labeling variables
+        # STEP 4: Re-naming variables
         
         namesFeatures           <- as.character(features[positionFeatures,2])
         namesFeatures           <- sub("^t","time", namesFeatures)
