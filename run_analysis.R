@@ -65,7 +65,7 @@ run_analysis <- function(dataDir){
         View(COMPLETE.mean)
         
         #return(COMPLETE)
-        #return(COMPLETE.mean)
+        return(COMPLETE.mean)
         
         write.table(COMPLETE.mean, file = "tableStep5", row.names = FALSE)
         
