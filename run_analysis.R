@@ -36,7 +36,7 @@ run_analysis <- function(dataDir){
         
         # STEP 3: Naming ACTIVITY variable values       
         
-        COMPLETE$ACTIVITY <- merge(COMPLETE$ACTIVITY, activity_labels, by=1)[,2]
+        COMPLETE$ACTIVITY <- factor(COMPLETE$ACTIVITY, levels = 1:6, labels = activity_labels$V2)
         
         # STEP 4: Re-labeling variables
         
@@ -55,7 +55,7 @@ run_analysis <- function(dataDir){
         
         # STEP 5: creating COMPLETE.mean table
         
-        COMPLETE.mean           <- aggregate(COMPLETE[,3:88], by=list(x$SUBJECT,x$ACTIVITY), FUN="mean")
+        COMPLETE.mean           <- aggregate(COMPLETE[,3:88], by=list(COMPLETE$SUBJECT,COMPLETE$ACTIVITY), mean)
         colnames(COMPLETE.mean) <- namesFeatures
         COMPLETE.mean           <- arrange(COMPLETE.mean,SUBJECT)
         
