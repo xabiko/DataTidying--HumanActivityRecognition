@@ -14,3 +14,5 @@
 	5. **Creating a second, independent tidy data set** with the average of each variable for each activity and each subject.
 
 * It will display the two final tables.
+
+* It will return the table in step 5.
