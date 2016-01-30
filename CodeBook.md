@@ -1,6 +1,6 @@
 #Code Book for run_analysis.R
 
-* **It will take 1 parameter**: the file path to the unzipped dataset.
+* **It will take 1 parameter**: the file path to the unzipped dataset (UCI HAR Dataset/).
 
 * It will apply the following transformations:
 	1. **Binding raw data**:
