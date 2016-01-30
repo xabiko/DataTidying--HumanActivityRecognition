@@ -7,7 +7,7 @@ This project contains a script that applies certain transformations to [this dat
 3. README.md
 
 ##Required libraries:
-* dplyr
+* dplyr_0.4.3
 
 ##Assumptions:
 * It is assumed that everyone who tests the script for evaluation purposes has downloaded [this dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and has unzipped it completely.
