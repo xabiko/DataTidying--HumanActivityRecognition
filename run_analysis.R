@@ -1,10 +1,10 @@
 run_analysis <- function(){
         
-        # Loading libraries (UCI HAR Dataset)
+        # Loading libraries
         
         library(dplyr)
         
-        # Reading tables
+        # Reading tables from ".../UCI HAR Dataset/"
         
         subject_train   <- read.table("train/subject_train.txt",col.names = "SUBJECT")
         y_train         <- read.table("train/y_train.txt",col.names = "ACTIVITY")
