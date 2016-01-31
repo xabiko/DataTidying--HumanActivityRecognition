@@ -1,6 +1,8 @@
 #Code Book for run_analysis.R
 
-* The script will apply the following transformations:
+* **It will take 1 parameter**: the file path to the unzipped dataset (UCI HAR Dataset/).
+
+* It will apply the following transformations:
 	1. **Binding raw data**:
 		*subject_train, y_train, X_train, subject_test, y_test & X_test will be binded into one big table.*
 		* subject_ tables are single column and contain 30 subject IDs, 1:30.
