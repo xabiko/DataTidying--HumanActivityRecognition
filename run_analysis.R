@@ -1,9 +1,8 @@
-run_analysis <- function(dataDir){
+run_analysis <- function(){
         
-        # Loading dplyr & setting working directory (UCI HAR Dataset)
+        # Loading libraries (UCI HAR Dataset)
         
         library(dplyr)
-        setwd(dataDir)
         
         # Reading tables
         
