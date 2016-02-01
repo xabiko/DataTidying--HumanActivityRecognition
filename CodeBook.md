@@ -1,5 +1,7 @@
 #Code Book for run_analysis.R
 
+* [Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) that will be transformed. Along with original codebooks.
+
 * The script will apply the following transformations:
 	1. **Binding raw data**:
 		*subject_train, y_train, X_train, subject_test, y_test & X_test will be binded into one big table.*
